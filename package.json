@@ -1,13 +1,13 @@
 {
-  "name": "vue-box-ui",
+  "name": "vue-ui-box",
   "version": "0.5.0",
-  "description": "vue form interace",
+  "description": "vue box interace",
   "author": "Domatskiy",
   "private": false,
   "main": "./src/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/domatskiy/vue-box-ui.git"
+    "url": "https://github.com/domatskiy/vue-ui-box.git"
   },
   "scripts": {
     "build": "webpack --config ./build/webpack.prod.conf.js --progress --hide-modules",
@@ -17,12 +17,10 @@
     "test:types": "tsc -p types/test"
   },
   "keywords": [
-    "vue form",
+    "vue",
     "interace",
     "admin",
-    "input",
-    "file",
-    "file select"
+    "box"
   ],
   "dependencies": {},
   "devDependencies": {
