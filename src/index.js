@@ -1,6 +1,8 @@
+import BoxUi from './Components/Box.vue'
+
 const boxUIPlugin = {
   install (VueInstance, options) {
-    VueInstance.component('box-ui', require('./Components/Box.vue'))
+    VueInstance.component(BoxUi.name, BoxUi)
   }
 }
 

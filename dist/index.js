@@ -33,7 +33,7 @@
     }([ function(module, __webpack_exports__, __webpack_require__) {
         "use strict";
         __webpack_exports__.a = {
-            name: "BoxInterface",
+            name: "BoxUi",
             props: [ "title" ],
             data: function() {
                 return {};
@@ -44,9 +44,9 @@
         Object.defineProperty(__webpack_exports__, "__esModule", {
             value: !0
         });
-        var boxUIPlugin = {
+        var __WEBPACK_IMPORTED_MODULE_0__Components_Box_vue__ = __webpack_require__(2), boxUIPlugin = {
             install: function(VueInstance, options) {
-                VueInstance.component("box-ui", __webpack_require__(2));
+                VueInstance.component(__WEBPACK_IMPORTED_MODULE_0__Components_Box_vue__.a.name, __WEBPACK_IMPORTED_MODULE_0__Components_Box_vue__.a);
             }
         };
         "undefined" != typeof window && window.Vue && window.Vue.use(boxUIPlugin), __webpack_exports__.default = boxUIPlugin;
@@ -55,18 +55,50 @@
         function injectStyle(context) {
             disposed || __webpack_require__(3);
         }
-        Object.defineProperty(__webpack_exports__, "__esModule", {
-            value: !0
-        });
-        var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Box_vue__ = __webpack_require__(0), __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4b9ed6ea_hasScoped_false_optionsId_0_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Box_vue__ = __webpack_require__(7), __WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_lib_runtime_component_normalizer__ = __webpack_require__(8), disposed = !1, __vue_styles__ = injectStyle, Component = Object(__WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_lib_runtime_component_normalizer__.a)(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Box_vue__.a, __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4b9ed6ea_hasScoped_false_optionsId_0_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Box_vue__.a, __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4b9ed6ea_hasScoped_false_optionsId_0_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Box_vue__.b, !1, __vue_styles__, null, null);
-        Component.options.__file = "src\\Components\\Box.vue", __webpack_exports__.default = Component.exports;
+        var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Box_vue__ = __webpack_require__(0), __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4b9ed6ea_hasScoped_false_optionsId_0_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Box_vue__ = __webpack_require__(8), __WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_lib_runtime_component_normalizer__ = __webpack_require__(9), disposed = !1, __vue_styles__ = injectStyle, Component = Object(__WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_lib_runtime_component_normalizer__.a)(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Box_vue__.a, __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4b9ed6ea_hasScoped_false_optionsId_0_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Box_vue__.a, __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4b9ed6ea_hasScoped_false_optionsId_0_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Box_vue__.b, !1, __vue_styles__, null, null);
+        Component.options.__file = "src\\Components\\Box.vue", __webpack_exports__.a = Component.exports;
     }, function(module, exports, __webpack_require__) {
         var content = __webpack_require__(4);
         "string" == typeof content && (content = [ [ module.i, content, "" ] ]), content.locals && (module.exports = content.locals);
-        var add = __webpack_require__(5).default;
+        var add = __webpack_require__(6).default;
         add("4d979cbe", content, !1, {});
     }, function(module, exports, __webpack_require__) {
-        exports = module.exports = __webpack_require__(9)(!1), exports.push([ module.i, "\n.box-ui {\n  border-radius: 5px;\n  border-top: 2px solid #CCCCCC;\n  background-color: #fff;\n  margin-bottom: 15px;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);\n}\n.box-ui__header {\n  position: relative;\n  box-sizing: border-box;\n  display: inline-block;\n  width: 100%;\n  padding: 15px 15px 0;\n}\n.box-ui__title {\n  margin: 0;\n  padding: 0 0 15px;\n  font-size: 18px;\n  border-bottom: 1px solid #ccc;\n}\n.box-ui__toggle {\n  box-shadow: none;\n  position: absolute;\n  width: 20px;\n  height: 20px;\n  top: 50%;\n  margin-top: -12px;\n  right: 15px;\n  background: transparent;\n  padding: 0;\n  cursor: pointer;\n  border: none;\n  outline: none;\n}\n.box-ui__body {\n  box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  -webkit-box-sizing: border-box;\n  padding: 15px 15px;\n  transition: height 0.3s linear;\n}\n.box-ui__body h4 {\n  margin-top: 0px;\n  margin-bottom: 5px;\n}\n.box-ui--toggle .ui-box__title {\n  border-bottom: 0;\n}\n.box-ui--toggle .ui-box__body {\n  overflow: hidden;\n  height: 0;\n  padding-top: 0;\n  padding-bottom: 0;\n  transition: height 0.3s linear, padding 0.3s linear;\n}\n", "" ]);
+        exports = module.exports = __webpack_require__(5)(!1), exports.push([ module.i, "\n.box-ui {\n  border-radius: 5px;\n  border-top: 2px solid #CCCCCC;\n  background-color: #fff;\n  margin-bottom: 15px;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);\n}\n.box-ui__header {\n  position: relative;\n  box-sizing: border-box;\n  display: inline-block;\n  width: 100%;\n  padding: 15px 15px 0;\n}\n.box-ui__title {\n  margin: 0;\n  padding: 0 0 15px;\n  font-size: 18px;\n  border-bottom: 1px solid #ccc;\n}\n.box-ui__toggle {\n  box-shadow: none;\n  position: absolute;\n  width: 20px;\n  height: 20px;\n  top: 50%;\n  margin-top: -12px;\n  right: 15px;\n  background: transparent;\n  padding: 0;\n  cursor: pointer;\n  border: none;\n  outline: none;\n}\n.box-ui__body {\n  box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  -webkit-box-sizing: border-box;\n  padding: 15px 15px;\n  transition: height 0.3s linear;\n}\n.box-ui__body h4 {\n  margin-top: 0px;\n  margin-bottom: 5px;\n}\n.box-ui--toggle .ui-box__title {\n  border-bottom: 0;\n}\n.box-ui--toggle .ui-box__body {\n  overflow: hidden;\n  height: 0;\n  padding-top: 0;\n  padding-bottom: 0;\n  transition: height 0.3s linear, padding 0.3s linear;\n}\n", "" ]);
+    }, function(module, exports) {
+        function cssWithMappingToString(item, useSourceMap) {
+            var content = item[1] || "", cssMapping = item[3];
+            if (!cssMapping) return content;
+            if (useSourceMap && "function" == typeof btoa) {
+                var sourceMapping = toComment(cssMapping);
+                return [ content ].concat(cssMapping.sources.map(function(source) {
+                    return "/*# sourceURL=" + cssMapping.sourceRoot + source + " */";
+                })).concat([ sourceMapping ]).join("\n");
+            }
+            return [ content ].join("\n");
+        }
+        function toComment(sourceMap) {
+            return "/*# sourceMappingURL=data:application/json;charset=utf-8;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
+        }
+        module.exports = function(useSourceMap) {
+            var list = [];
+            return list.toString = function() {
+                return this.map(function(item) {
+                    var content = cssWithMappingToString(item, useSourceMap);
+                    return item[2] ? "@media " + item[2] + "{" + content + "}" : content;
+                }).join("");
+            }, list.i = function(modules, mediaQuery) {
+                "string" == typeof modules && (modules = [ [ null, modules, "" ] ]);
+                for (var alreadyImportedModules = {}, i = 0; i < this.length; i++) {
+                    var id = this[i][0];
+                    "number" == typeof id && (alreadyImportedModules[id] = !0);
+                }
+                for (i = 0; i < modules.length; i++) {
+                    var item = modules[i];
+                    "number" == typeof item[0] && alreadyImportedModules[item[0]] || (mediaQuery && !item[2] ? item[2] = mediaQuery : mediaQuery && (item[2] = "(" + item[2] + ") and (" + mediaQuery + ")"), 
+                    list.push(item));
+                }
+            }, list;
+        };
     }, function(module, __webpack_exports__, __webpack_require__) {
         "use strict";
         function addStylesClient(parentId, list, _isProduction, _options) {
@@ -150,7 +182,7 @@
         Object.defineProperty(__webpack_exports__, "__esModule", {
             value: !0
         }), __webpack_exports__.default = addStylesClient;
-        var __WEBPACK_IMPORTED_MODULE_0__listToStyles__ = __webpack_require__(6), hasDocument = "undefined" != typeof document;
+        var __WEBPACK_IMPORTED_MODULE_0__listToStyles__ = __webpack_require__(7), hasDocument = "undefined" != typeof document;
         if ("undefined" != typeof DEBUG && DEBUG && !hasDocument) throw new Error("vue-style-loader cannot be used in a non-browser environment. Use { target: 'node' } in your Webpack config to indicate a server-rendering environment.");
         var stylesInDom = {}, head = hasDocument && (document.head || document.getElementsByTagName("head")[0]), singletonElement = null, singletonCounter = 0, isProduction = !1, noop = function() {}, options = null, ssrIdKey = "data-vue-ssr-id", isOldIE = "undefined" != typeof navigator && /msie [6-9]\b/.test(navigator.userAgent.toLowerCase()), replaceText = function() {
             var textStore = [];
@@ -230,40 +262,5 @@
             };
         }
         __webpack_exports__.a = normalizeComponent;
-    }, function(module, exports) {
-        function cssWithMappingToString(item, useSourceMap) {
-            var content = item[1] || "", cssMapping = item[3];
-            if (!cssMapping) return content;
-            if (useSourceMap && "function" == typeof btoa) {
-                var sourceMapping = toComment(cssMapping);
-                return [ content ].concat(cssMapping.sources.map(function(source) {
-                    return "/*# sourceURL=" + cssMapping.sourceRoot + source + " */";
-                })).concat([ sourceMapping ]).join("\n");
-            }
-            return [ content ].join("\n");
-        }
-        function toComment(sourceMap) {
-            return "/*# sourceMappingURL=data:application/json;charset=utf-8;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
-        }
-        module.exports = function(useSourceMap) {
-            var list = [];
-            return list.toString = function() {
-                return this.map(function(item) {
-                    var content = cssWithMappingToString(item, useSourceMap);
-                    return item[2] ? "@media " + item[2] + "{" + content + "}" : content;
-                }).join("");
-            }, list.i = function(modules, mediaQuery) {
-                "string" == typeof modules && (modules = [ [ null, modules, "" ] ]);
-                for (var alreadyImportedModules = {}, i = 0; i < this.length; i++) {
-                    var id = this[i][0];
-                    "number" == typeof id && (alreadyImportedModules[id] = !0);
-                }
-                for (i = 0; i < modules.length; i++) {
-                    var item = modules[i];
-                    "number" == typeof item[0] && alreadyImportedModules[item[0]] || (mediaQuery && !item[2] ? item[2] = mediaQuery : mediaQuery && (item[2] = "(" + item[2] + ") and (" + mediaQuery + ")"), 
-                    list.push(item));
-                }
-            }, list;
-        };
     } ]);
 });

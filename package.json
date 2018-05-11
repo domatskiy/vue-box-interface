@@ -1,13 +1,13 @@
 {
-  "name": "vue-box-ui",
-  "version": "0.5.0",
-  "description": "vue form interace",
+  "name": "vue-ui-box",
+  "version": "0.6.0",
+  "description": "vue box interace",
   "author": "Domatskiy",
   "private": false,
-  "main": "./src/index.js",
+  "main": "./dist/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/domatskiy/vue-box-ui.git"
+    "url": "https://github.com/domatskiy/vue-ui-box.git"
   },
   "scripts": {
     "build": "webpack --config ./build/webpack.prod.conf.js --progress --hide-modules",

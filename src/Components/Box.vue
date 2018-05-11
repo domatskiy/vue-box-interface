@@ -14,11 +14,11 @@
 
 <script>
 export default {
-  name: 'BoxInterface',
+  name: 'BoxUi',
   props: ['title'],
   data () {
     return {}
-  }
+  },
 }
 </script>
 

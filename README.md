@@ -1,6 +1,6 @@
 ## install
 
-npm i vue-box-ui
+npm i vue-ui-box
 
 ## use
 
@@ -16,7 +16,3 @@ example app
 import BoxUI from 'vue-box-ui'
 Vue.use(BoxUI)
 ```
-
-style
-
-https://domatskiy.github.io/vue-box-ui/
