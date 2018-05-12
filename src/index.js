@@ -1,13 +1,13 @@
-import BoxUi from './Components/Box.vue'
+import UiBox from './Components/Box.vue'
 
-const boxUIPlugin = {
+const UIBoxPlugin = {
   install (VueInstance, options) {
-    VueInstance.component(BoxUi.name, BoxUi)
+    VueInstance.component(UiBox.name, UiBox)
   }
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(boxUIPlugin)
+  window.Vue.use(UIBoxPlugin)
 }
 
-export default boxUIPlugin
+export default UIBoxPlugin
