@@ -1,5 +1,5 @@
 !function(root, factory) {
-    "object" == typeof exports && "object" == typeof module ? module.exports = factory() : "function" == typeof define && define.amd ? define([], factory) : "object" == typeof exports ? exports["vue-js-modal"] = factory() : root["vue-js-modal"] = factory();
+    "object" == typeof exports && "object" == typeof module ? module.exports = factory() : "function" == typeof define && define.amd ? define([], factory) : "object" == typeof exports ? exports["vue-ui-box"] = factory() : root["vue-ui-box"] = factory();
 }("undefined" != typeof self ? self : this, function() {
     return function(modules) {
         function __webpack_require__(moduleId) {
@@ -45,11 +45,11 @@
             value: !0
         });
         var __WEBPACK_IMPORTED_MODULE_0__Components_Box_vue__ = __webpack_require__(2), UIBoxPlugin = {
-            install: function(VueInstance, options) {
-                VueInstance.component(__WEBPACK_IMPORTED_MODULE_0__Components_Box_vue__.a.name, __WEBPACK_IMPORTED_MODULE_0__Components_Box_vue__.a);
+            install: function(Vue, options) {
+                Vue.component(__WEBPACK_IMPORTED_MODULE_0__Components_Box_vue__.a.name, __WEBPACK_IMPORTED_MODULE_0__Components_Box_vue__.a);
             }
         };
-        "undefined" != typeof window && window.Vue && window.Vue.use(UIBoxPlugin), __webpack_exports__.default = UIBoxPlugin;
+        __webpack_exports__.default = UIBoxPlugin;
     }, function(module, __webpack_exports__, __webpack_require__) {
         "use strict";
         function injectStyle(context) {
@@ -63,7 +63,7 @@
         var add = __webpack_require__(6).default;
         add("4d979cbe", content, !1, {});
     }, function(module, exports, __webpack_require__) {
-        exports = module.exports = __webpack_require__(5)(!1), exports.push([ module.i, "\n.ui-box {\n  border-radius: 5px;\n  border-top: 2px solid #CCCCCC;\n  background-color: #fff;\n  margin-bottom: 15px;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);\n}\n.ui-box__header {\n  position: relative;\n  box-sizing: border-box;\n  display: inline-block;\n  width: 100%;\n  padding: 15px 15px 0;\n}\n.ui-box__title {\n  margin: 0;\n  padding: 0 0 15px;\n  font-size: 18px;\n  border-bottom: 1px solid #ccc;\n}\n.ui-box__toggle {\n  box-shadow: none;\n  position: absolute;\n  width: 20px;\n  height: 20px;\n  top: 50%;\n  margin-top: -12px;\n  right: 15px;\n  background: transparent;\n  padding: 0;\n  cursor: pointer;\n  border: none;\n  outline: none;\n}\n.ui-box__body {\n  box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  -webkit-box-sizing: border-box;\n  padding: 15px 15px;\n  transition: height 0.3s linear;\n}\n.ui-box__body h4 {\n  margin-top: 0px;\n  margin-bottom: 5px;\n}\n.ui-box--toggle .ui-box__title {\n  border-bottom: 0;\n}\n.ui-box--toggle .ui-box__body {\n  overflow: hidden;\n  height: 0;\n  padding-top: 0;\n  padding-bottom: 0;\n  transition: height 0.3s linear, padding 0.3s linear;\n}\n", "" ]);
+        exports = module.exports = __webpack_require__(5)(!1), exports.push([ module.i, "\n.ui-box {\n  border-radius: 5px;\n  border-top: 2px solid #CCCCCC;\n  background-color: #fff;\n  margin-bottom: 15px;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);\n}\n.ui-box__header {\n  position: relative;\n  box-sizing: border-box;\n  display: inline-block;\n  width: 100%;\n  padding: 15px 15px 0;\n}\n.ui-box__title {\n  margin: 0;\n  padding: 0 0 15px;\n  font-size: 18px;\n  border-bottom: 1px solid #ccc;\n}\n.ui-box__toggle {\n  box-shadow: none;\n  position: absolute;\n  width: 20px;\n  height: 20px;\n  top: 50%;\n  margin-top: -12px;\n  right: 15px;\n  background: transparent;\n  padding: 0;\n  cursor: pointer;\n  border: none;\n  outline: none;\n}\n.ui-box__body {\n  box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  -webkit-box-sizing: border-box;\n  padding: 15px 15px;\n  transition: height 0.3s linear;\n}\n.ui-box__body h4 {\n  margin-top: 0;\n  margin-bottom: 5px;\n}\n.ui-box--toggle .ui-box__title {\n  border-bottom: 0;\n}\n.ui-box--toggle .ui-box__body {\n  overflow: hidden;\n  height: 0;\n  padding-top: 0;\n  padding-bottom: 0;\n  transition: height 0.3s linear, padding 0.3s linear;\n}\n", "" ]);
     }, function(module, exports) {
         function cssWithMappingToString(item, useSourceMap) {
             var content = item[1] || "", cssMapping = item[3];

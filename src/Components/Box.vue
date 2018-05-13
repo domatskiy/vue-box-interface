@@ -71,7 +71,7 @@ export default {
             transition: height 0.3s linear;
 
             h4{
-                margin-top: 0px;
+                margin-top: 0;
                 margin-bottom: 5px;
             }
         }

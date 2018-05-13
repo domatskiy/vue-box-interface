@@ -11,10 +11,6 @@
 </template>
 
 <script>
-    import Vue from 'vue'
-    import UIBox from 'plugin'
-    Vue.use(UIBox)
-
     export default {
       name: 'app',
       components: {},
