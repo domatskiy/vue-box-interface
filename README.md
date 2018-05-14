@@ -5,14 +5,17 @@ npm i vue-ui-box
 ## use
 
 ```html
-<box-ui title="Box DEMO">
-  content
-</box-ui>
+<ui-box title="Box DEMO">
+  box content
+</ui-box>
 ```
 
 example app
 
 ```js
-import BoxUI from 'vue-box-ui'
-Vue.use(BoxUI)
+import UIBox from 'vue-ui-box'
+Vue.use(UIBox)
 ```
+
+## screenshot
+![box screen](demo/screenshot/ui-box.png)

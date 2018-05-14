@@ -1,10 +1,10 @@
 <template>
-    <div class="box-ui box-ui--toggle1">
-        <div class="box-ui__header">
-            <div class="box-ui__title" v-if="title">{{title}}</div>
-            <button class="box-ui__toggle"></button>
+    <div class="ui-box ui-box--toggle1">
+        <div class="ui-box__header">
+            <div class="ui-box__title" v-if="title">{{title}}</div>
+            <button class="ui-box__toggle"></button>
         </div>
-        <div class="box-ui__body">
+        <div class="ui-box__body">
             <slot>
                 <p>пусто</p>
             </slot>
@@ -14,17 +14,17 @@
 
 <script>
 export default {
-  name: 'BoxUi',
+  name: 'UiBox',
   props: ['title'],
   data () {
     return {}
-  },
+  }
 }
 </script>
 
 <style lang="less" scope>
 
-    .box-ui {
+    .ui-box {
         border-radius: 5px;
         border-top: 2px solid #CCCCCC;
         background-color: #fff;
@@ -71,7 +71,7 @@ export default {
             transition: height 0.3s linear;
 
             h4{
-                margin-top: 0px;
+                margin-top: 0;
                 margin-bottom: 5px;
             }
         }

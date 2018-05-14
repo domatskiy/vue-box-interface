@@ -1,5 +1,5 @@
 !function(root, factory) {
-    "object" == typeof exports && "object" == typeof module ? module.exports = factory() : "function" == typeof define && define.amd ? define([], factory) : "object" == typeof exports ? exports["vue-js-modal"] = factory() : root["vue-js-modal"] = factory();
+    "object" == typeof exports && "object" == typeof module ? module.exports = factory() : "function" == typeof define && define.amd ? define([], factory) : "object" == typeof exports ? exports["vue-ui-box"] = factory() : root["vue-ui-box"] = factory();
 }("undefined" != typeof self ? self : this, function() {
     return function(modules) {
         function __webpack_require__(moduleId) {
@@ -33,7 +33,7 @@
     }([ function(module, __webpack_exports__, __webpack_require__) {
         "use strict";
         __webpack_exports__.a = {
-            name: "BoxUi",
+            name: "UiBox",
             props: [ "title" ],
             data: function() {
                 return {};
@@ -44,12 +44,12 @@
         Object.defineProperty(__webpack_exports__, "__esModule", {
             value: !0
         });
-        var __WEBPACK_IMPORTED_MODULE_0__Components_Box_vue__ = __webpack_require__(2), boxUIPlugin = {
-            install: function(VueInstance, options) {
-                VueInstance.component(__WEBPACK_IMPORTED_MODULE_0__Components_Box_vue__.a.name, __WEBPACK_IMPORTED_MODULE_0__Components_Box_vue__.a);
+        var __WEBPACK_IMPORTED_MODULE_0__Components_Box_vue__ = __webpack_require__(2), UIBoxPlugin = {
+            install: function(Vue, options) {
+                Vue.component(__WEBPACK_IMPORTED_MODULE_0__Components_Box_vue__.a.name, __WEBPACK_IMPORTED_MODULE_0__Components_Box_vue__.a);
             }
         };
-        "undefined" != typeof window && window.Vue && window.Vue.use(boxUIPlugin), __webpack_exports__.default = boxUIPlugin;
+        __webpack_exports__.default = UIBoxPlugin;
     }, function(module, __webpack_exports__, __webpack_require__) {
         "use strict";
         function injectStyle(context) {
@@ -63,7 +63,7 @@
         var add = __webpack_require__(6).default;
         add("4d979cbe", content, !1, {});
     }, function(module, exports, __webpack_require__) {
-        exports = module.exports = __webpack_require__(5)(!1), exports.push([ module.i, "\n.box-ui {\n  border-radius: 5px;\n  border-top: 2px solid #CCCCCC;\n  background-color: #fff;\n  margin-bottom: 15px;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);\n}\n.box-ui__header {\n  position: relative;\n  box-sizing: border-box;\n  display: inline-block;\n  width: 100%;\n  padding: 15px 15px 0;\n}\n.box-ui__title {\n  margin: 0;\n  padding: 0 0 15px;\n  font-size: 18px;\n  border-bottom: 1px solid #ccc;\n}\n.box-ui__toggle {\n  box-shadow: none;\n  position: absolute;\n  width: 20px;\n  height: 20px;\n  top: 50%;\n  margin-top: -12px;\n  right: 15px;\n  background: transparent;\n  padding: 0;\n  cursor: pointer;\n  border: none;\n  outline: none;\n}\n.box-ui__body {\n  box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  -webkit-box-sizing: border-box;\n  padding: 15px 15px;\n  transition: height 0.3s linear;\n}\n.box-ui__body h4 {\n  margin-top: 0px;\n  margin-bottom: 5px;\n}\n.box-ui--toggle .ui-box__title {\n  border-bottom: 0;\n}\n.box-ui--toggle .ui-box__body {\n  overflow: hidden;\n  height: 0;\n  padding-top: 0;\n  padding-bottom: 0;\n  transition: height 0.3s linear, padding 0.3s linear;\n}\n", "" ]);
+        exports = module.exports = __webpack_require__(5)(!1), exports.push([ module.i, "\n.ui-box {\n  border-radius: 5px;\n  border-top: 2px solid #CCCCCC;\n  background-color: #fff;\n  margin-bottom: 15px;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);\n}\n.ui-box__header {\n  position: relative;\n  box-sizing: border-box;\n  display: inline-block;\n  width: 100%;\n  padding: 15px 15px 0;\n}\n.ui-box__title {\n  margin: 0;\n  padding: 0 0 15px;\n  font-size: 18px;\n  border-bottom: 1px solid #ccc;\n}\n.ui-box__toggle {\n  box-shadow: none;\n  position: absolute;\n  width: 20px;\n  height: 20px;\n  top: 50%;\n  margin-top: -12px;\n  right: 15px;\n  background: transparent;\n  padding: 0;\n  cursor: pointer;\n  border: none;\n  outline: none;\n}\n.ui-box__body {\n  box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  -webkit-box-sizing: border-box;\n  padding: 15px 15px;\n  transition: height 0.3s linear;\n}\n.ui-box__body h4 {\n  margin-top: 0;\n  margin-bottom: 5px;\n}\n.ui-box--toggle .ui-box__title {\n  border-bottom: 0;\n}\n.ui-box--toggle .ui-box__body {\n  overflow: hidden;\n  height: 0;\n  padding-top: 0;\n  padding-bottom: 0;\n  transition: height 0.3s linear, padding 0.3s linear;\n}\n", "" ]);
     }, function(module, exports) {
         function cssWithMappingToString(item, useSourceMap) {
             var content = item[1] || "", cssMapping = item[3];
@@ -218,15 +218,15 @@
         var render = function() {
             var _vm = this, _h = _vm.$createElement, _c = _vm._self._c || _h;
             return _c("div", {
-                staticClass: "box-ui box-ui--toggle1"
+                staticClass: "ui-box ui-box--toggle1"
             }, [ _c("div", {
-                staticClass: "box-ui__header"
+                staticClass: "ui-box__header"
             }, [ _vm.title ? _c("div", {
-                staticClass: "box-ui__title"
+                staticClass: "ui-box__title"
             }, [ _vm._v(_vm._s(_vm.title)) ]) : _vm._e(), _vm._v(" "), _c("button", {
-                staticClass: "box-ui__toggle"
+                staticClass: "ui-box__toggle"
             }) ]), _vm._v(" "), _c("div", {
-                staticClass: "box-ui__body"
+                staticClass: "ui-box__body"
             }, [ _vm._t("default", [ _c("p", [ _vm._v("пусто") ]) ]) ], 2) ]);
         }, staticRenderFns = [];
         render._withStripped = !0;

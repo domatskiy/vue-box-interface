@@ -1,21 +1,16 @@
 <template>
     <div id="app">
-        <box-ui title="Box DEMO">
+        <ui-box title="Box DEMO">
             content
-		</box-ui>
+		</ui-box>
 		
-		<box-ui title="Box DEMO 2">
+		<ui-box title="Box DEMO 2">
             content
-		</box-ui>
+		</ui-box>
     </div>
 </template>
 
 <script>
-    import Vue from 'vue'
-    import Box from 'plugin'
-
-    Vue.use(Box)
-
     export default {
       name: 'app',
       components: {},
@@ -24,6 +19,3 @@
       }
     }
 </script>
-<style lang="less">
-  
-</style>
