@@ -25,11 +25,11 @@
     "file select"
   ],
   "license": "MIT",
-  "dependencies": {
-
+  "dependencies": {},
+  "peerDependencies": {
+    "vue": "^2.3"
   },
   "devDependencies": {
-    "uglifyjs-webpack-plugin": "^0.4.6",
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.22.1",
     "babel-eslint": "^7.1.1",
@@ -76,7 +76,7 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-spec-reporter": "0.0.31",
     "karma-webpack": "^2.0.2",
-    "less": "^2.7.1",
+    "less": "^2.7.3",
     "less-loader": "^2.2.3",
     "lolex": "^1.5.2",
     "mocha": "^3.2.0",
@@ -98,7 +98,7 @@
     "uglify-js": "^3.3.21",
     "uglifyjs-webpack-plugin": "^0.4.6",
     "url-loader": "^0.5.8",
-    "vue": "^2.3",
+
     "vue-hot-reload-api": "^2.0.8",
     "vue-loader": "^14.2.2",
     "vue-style-loader": "^2.0.0",

@@ -1,5 +1,5 @@
 !function(root, factory) {
-    "object" == typeof exports && "object" == typeof module ? module.exports = factory() : "function" == typeof define && define.amd ? define([], factory) : "object" == typeof exports ? exports["vue-ui-box"] = factory() : root["vue-ui-box"] = factory();
+    "object" == typeof exports && "object" == typeof module ? module.exports = factory() : "function" == typeof define && define.amd ? define("vue-ui-box", [], factory) : "object" == typeof exports ? exports["vue-ui-box"] = factory() : root["vue-ui-box"] = factory();
 }("undefined" != typeof self ? self : this, function() {
     return function(modules) {
         function __webpack_require__(moduleId) {
@@ -263,5 +263,5 @@
             };
         }
         __webpack_exports__.a = normalizeComponent;
-    } ]);
+    } ]).default;
 });

@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
-import {UIBox} from 'plugin'
+import UIBoxPlugin from 'plugin'
 
-console.log('UIBoxPlugin', UIBox)
-Vue.use(UIBox)
+console.log('UIBoxPlugin', UIBoxPlugin)
+Vue.use(UIBoxPlugin)
 
 new Vue({
   el: '#app',

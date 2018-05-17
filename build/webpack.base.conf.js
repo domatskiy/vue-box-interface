@@ -4,11 +4,16 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
     entry: path.resolve(__dirname, '../src/index.js'),
+    externals: [
+        'vue',
+    ],
     output: {
         path: path.resolve(__dirname, '../dist'),
         publicPath: '/dist/',
         library:'vue-ui-box',
-        libraryTarget: 'umd'
+        libraryExport: 'default',
+        libraryTarget: 'umd',
+        umdNamedDefine: true
     },
     module: {
         rules: [
@@ -23,7 +28,7 @@ module.exports = {
             }
         ]
     },
-    // devtool: '#source-map',
+    devtool: false,
     plugins: [
         new webpack.DefinePlugin({
             'process.env': {
