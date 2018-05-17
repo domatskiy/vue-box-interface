@@ -45,7 +45,8 @@
             value: !0
         });
         var __WEBPACK_IMPORTED_MODULE_0__Components_Box_vue__ = __webpack_require__(2), UIBoxPlugin = {
-            install: function(Vue, options) {
+            install: function(Vue) {
+                arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
                 Vue.component(__WEBPACK_IMPORTED_MODULE_0__Components_Box_vue__.a.name, __WEBPACK_IMPORTED_MODULE_0__Components_Box_vue__.a);
             }
         };

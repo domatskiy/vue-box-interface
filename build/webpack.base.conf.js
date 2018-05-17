@@ -2,8 +2,6 @@ const path = require('path')
 const webpack = require('webpack')
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
-//  "build:client": "cross-env NODE_ENV=production webpack --config ./build/webpack.client.config.js --progress --hide-modules",
-
 module.exports = {
     entry: path.resolve(__dirname, '../src/index.js'),
     output: {
