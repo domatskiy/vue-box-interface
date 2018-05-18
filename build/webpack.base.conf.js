@@ -2,15 +2,18 @@ const path = require('path')
 const webpack = require('webpack')
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
-//  "build:client": "cross-env NODE_ENV=production webpack --config ./build/webpack.client.config.js --progress --hide-modules",
-
 module.exports = {
     entry: path.resolve(__dirname, '../src/index.js'),
+    externals: [
+        'vue',
+    ],
     output: {
         path: path.resolve(__dirname, '../dist'),
         publicPath: '/dist/',
         library:'vue-ui-box',
-        libraryTarget: 'umd'
+        libraryExport: 'default',
+        libraryTarget: 'umd',
+        umdNamedDefine: true
     },
     module: {
         rules: [
@@ -25,7 +28,7 @@ module.exports = {
             }
         ]
     },
-    // devtool: '#source-map',
+    devtool: false,
     plugins: [
         new webpack.DefinePlugin({
             'process.env': {

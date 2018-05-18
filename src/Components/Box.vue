@@ -1,10 +1,13 @@
 <template>
-    <div class="ui-box ui-box--toggle1">
+    <div class="ui-box" :class="[toggleEnabled ? 'ui-box--toggle' : '', open ? 'ui-box--open' : 'ui-box--close']">
         <div class="ui-box__header">
             <div class="ui-box__title" v-if="title">{{title}}</div>
-            <button class="ui-box__toggle"></button>
+            <button class="ui-box__toggle"
+                v-if="toggleEnabled"
+                :class="open ? 'ui-box__toggle--open' : ''"
+                @click="toggleBox($event)"></button>
         </div>
-        <div class="ui-box__body">
+        <div class="ui-box__body" v-if="open">
             <slot>
                 <p>пусто</p>
             </slot>
@@ -13,11 +16,61 @@
 </template>
 
 <script>
+var ls = require('local-storage');
+
 export default {
   name: 'UiBox',
-  props: ['title'],
+  props: {
+    title: {
+      type: String,
+      required: false,
+      default: ''
+    },
+    id: {
+      type: String,
+      required: false,
+      default: ''
+    },
+    toggle: {
+      type: Boolean,
+      required: false,
+      default: false
+    }
+  },
   data () {
-    return {}
+    return {
+      key: 'box-' + this.id,
+      toggleEnabled: false,
+      open: true
+    }
+  },
+  methods: {
+    toggleBox: function (e) {
+      e.preventDefault()
+      e.stopPropagation()
+      this.open = !this.open
+      ls.set(this.key, this.open)
+      if(this.open)
+        this.$emit('open')
+      else
+        this.$emit('close')
+    }
+  },
+  created: function () {
+    if(this.toggle === true && !this.id) {
+      console.warn('set id for toggle box')
+    }
+
+    if(this.toggle === true && this.id) {
+      this.toggleEnabled = true
+
+      let open = ls.get(this.key) - 0
+      if(open !== null)
+          this.open = open
+
+      console.log(this.key + ' open', closed)
+    }
+
   }
 }
 </script>
@@ -47,8 +100,6 @@ export default {
         }
 
         &__toggle {
-            border: none;
-            outline: none;
             box-shadow: none;
             position: absolute;
             width: 20px;
@@ -59,8 +110,13 @@ export default {
             background: transparent;
             padding: 0;
             cursor: pointer;
-            border: none;
+            border: 2px solid #ccc;
             outline: none;
+
+            &--open{
+              border: 2px solid transparent;
+              border-bottom: 2px solid #ccc;
+            }
         }
 
         &__body {
@@ -77,7 +133,7 @@ export default {
         }
 
 
-        &--toggle {
+        &--close {
 
             .ui-box__title {
                 border-bottom: 0;
