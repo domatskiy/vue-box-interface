@@ -6,10 +6,8 @@ const UIBoxPlugin = {
   }
 }
 
-/*
 if (typeof window !== 'undefined' && window.Vue) {
   window.Vue.use(UIBoxPlugin)
 }
-*/
 
 export default UIBoxPlugin
