@@ -32,3 +32,11 @@ Vue.use(UIBox)
 | ------ |:-----:|:---------|
 | open |   |  when opening the box|
 | close |   |  when closing the box|
+
+### ui-box slots
+
+| Name   |  |
+| ------ |:---------|
+| header | |
+| footer | |
+
