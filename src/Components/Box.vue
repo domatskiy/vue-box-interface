@@ -80,6 +80,7 @@ export default {
         this.open = open
       }
     }
+    this.showFooter = typeof this.$slots.footer === 'object'
   },
   updated: function () {
     this.showFooter = typeof this.$slots.footer === 'object'
